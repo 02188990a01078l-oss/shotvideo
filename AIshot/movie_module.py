@@ -5,15 +5,13 @@ Created on Wed Aug  5 21:26:48 2026
 @author: dswda_uscxvt9
 """
 import streamlit as st
-import webbrowser
             
 def category(sel):
     if sel == "취업/직장":
         st.title("서로의 온기: 여름과 봄\n")
         st.markdown("취업 실패, 위로 , 비교\n")
-        if st.button("재생", icon="▶", icon_position="left", width=300):
-            webbrowser.open("https://youtu.be/FyicCBk1puA?si=1C9F7MV6TV6SYOL-")
-        elif st.button("상세 보기", icon="📑", icon_position="left", width=300):
+        st.video("https://youtu.be/FyicCBk1puA?si=1C9F7MV6TV6SYOL-", width=300)
+        if st.button("상세 보기", icon="📑", icon_position="left", width=300):
             st.write("서로의 온기: 여름과 봄\n")
             st.markdown("취업 문제로 고민이 많은 여름을 봄이 위로하는 이야기\n")
             if st.button("상세보기 취소", width=130):
@@ -39,11 +37,11 @@ def category(sel):
     elif sel == "첫사랑":
         st.title("서로의 온기: 희서와 민우\n")
         st.markdown("첫사랑, 취업, 직장, 우연한 만남, 아름다운\n")
-        if st.button("첫 이야기", icon="▶", icon_position="left", width=300):
-            webbrowser.open("https://youtu.be/pa8NQJuak4Y?si=jyTqT_cBpjxwAaGn")
-        elif st.button("뒷 이야기", icon="🔙", icon_position="left", width=300):
-            webbrowser.open("https://youtu.be/AWXDsw-Lxr0?si=ymFiGoc4lxMsv7_t")
-        elif st.button("상세 보기", icon="📑", icon_position="left", width=300):
+        st.write("첫 이야기\n")
+        st.video("https://youtu.be/pa8NQJuak4Y?si=jyTqT_cBpjxwAaGn", width=300)
+        st.write("딋 이야기\n")
+        st.video("https://youtu.be/AWXDsw-Lxr0?si=ymFiGoc4lxMsv7_t", width=300)
+        if st.button("상세 보기", icon="📑", icon_position="left", width=300):
             st.write("서로의 온기: 희서와 민우\n")
             st.markdown("회사에서 열심히 일해도 욕먹는 서울 생활의 환멸을 느껴 고향으로 돌아온 희서와 민우는 오랜만에 재회한다. 그리고 벌어지는 로맨스 이야기.\n")
             if st.button("상세보기 취소", width=130):
@@ -70,9 +68,8 @@ def category(sel):
     elif sel == "판타지":
         st.title("서로의 온기: 승과 은\n")
         st.markdown("주술, 비교, 위로\n")
-        if st.button("재생", icon="▶", icon_position="left", width=300):
-            webbrowser.open("https://youtu.be/p49nPjEBF1s?si=G_XVhPWiGtDNCI1c")
-        elif st.button("상세 보기", icon="📑", icon_position="left", width=300): 
+        st.video("https://youtu.be/p49nPjEBF1s?si=G_XVhPWiGtDNCI1c", width=300)
+        if st.button("상세 보기", icon="📑", icon_position="left", width=300): 
             st.write("서로의 온기: 승과 은\n")
             st.markdown("주술 능력이 형편 없다며, 동생과 비교하는 아버지에게 슬픈 감정을 느끼는 은을 승이 따뜻한 위로를 건넨다.\n")
             if st.button("상세보기 취소", width=130):
@@ -86,8 +83,7 @@ def category(sel):
     elif sel == "가족":
         st.title("서로의 온기: 규남과 수아\n")
         st.markdown("거짓말, 가정 폭력, 언어 폭력, 따뜻한 손길, 위로\n")
-        if st.button("재생", icon="▶", icon_position="left", width=300):
-            webbrowser.open("https://youtu.be/9OubY0llrWE?si=1TpZvgPZaTFacnlX")
+        st.video("https://youtu.be/9OubY0llrWE?si=1TpZvgPZaTFacnlX",  width=300)
         if st.button("상세 보기", icon="📑", icon_position="left", width=300): 
             st.write("서로의 온기: 규남과 수아\n")
             st.markdown("아버지의 언어 폭력으로 상처를 받은 규남과 곁에서 따뜻한 손길을 건네주는 단짝 친구 수아의 로맨스가 시작된다.\n 한 편 규남의 어머니 밀자는 쉽지 않은 결정을 내린다.\n")
@@ -102,9 +98,8 @@ def category(sel):
     elif sel == "학교":
         st.title("서로의 온기: 소희와 민석\n")
         st.markdown("친구, 외로움, 고통, 서로의 온기, 따뜻한 손길\n")
-        if st.button("재생", icon="▶", icon_position="left", width=300):
-            webbrowser.open("https://youtu.be/4sAqoEU0IVE?si=avMRS38QliDcBBDd")
-        elif st.button("상세 보기", icon="📑", icon_position="left", width=300): 
+        st.video("https://youtu.be/4sAqoEU0IVE?si=avMRS38QliDcBBDd", width=300)
+        if st.button("상세 보기", icon="📑", icon_position="left", width=300): 
             st.write("서로의 온기: 소희와 민석\n")
             st.markdown("친구를 사귀지 못해 외롭고, 고통스러운 나날들을 보낸 민석과 그런 민석 곁에 운명같이 찾아온 소희에 로맨스가 시작된다!\n")
             if st.button("상세보기 취소", width=130):
@@ -141,9 +136,8 @@ def category(sel):
     elif sel == "슬픈 연애":
         st.title("서로의 온기: 연서와 규현\n")
         st.markdown("시한부, 든든한 연인, 슬픔, 슬픈 로맨스\n")
-        if st.button("재생", icon="▶", icon_position="left", width=300):
-            webbrowser.open("https://youtu.be/ybV8xMdwCa4?si=WvQ8SLx7mFhAlcWe")
-        elif st.button("상세 보기", icon="📑", icon_position="left", width=300): 
+        st.video("https://youtu.be/ybV8xMdwCa4?si=WvQ8SLx7mFhAlcWe", width=300)
+        if st.button("상세 보기", icon="📑", icon_position="left", width=300): 
             st.write("서로의 온기: 연서와 규현\n")
             st.markdown("29살 어린 나이에 폐암 말기가 걸린 규현과 3개월 동안 옆에서 묵묵히 지키며 사랑을 주는 연서의 슬픈 로맨스가 시작된다.\n")
             if st.button("상세보기 취소", width=130):
@@ -167,9 +161,8 @@ def category(sel):
         st.title("🆕 최신 AI 숏폼\n")
         st.markdown("서로의 온기 2: 지윤과 민식\n")
         st.markdown("학교폭력, 위로, 조언, 따뜻한 손길, 사회문제\n")
-        if st.button("재생", icon="▶", icon_position="left", width=300):
-            webbrowser.open("https://youtu.be/p9J9A_L4Wkc?si=llkGgfybUgItcy8C")
-        elif st.button("상세 보기", icon="📑", icon_position="left", width=300):
+        st.video("https://youtu.be/p9J9A_L4Wkc?si=llkGgfybUgItcy8C", width=300)
+        if st.button("상세 보기", icon="📑", icon_position="left", width=300):
             st.markdown("서로의 온기 2: 지윤과 민식\n")
             st.markdown("2년 동안 학업 시스템이 완벽한 명문 이수고등학교에서 우식 패거리에게 학교폭력을 당한 민식.\n")
             st.markdown("그런 민식 곁에 용기있는 여학생 지윤이 다가와 따뜻한 위로와 조언을 건네는 이야기.\n")
