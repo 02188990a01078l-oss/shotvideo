@@ -171,7 +171,7 @@ def category(sel):
                         
         st.write("\n")
         st.write("\n")
-        sel_sea = st.selectbox("🎶 OST 선택", ['서로의 온기 시즌1 OST', '서로의 온기 시즌2 OST', '바다 OST']) 
+        sel_sea = st.selectbox("🎶 OST 듣기", ['서로의 온기 시즌1 OST', '서로의 온기 시즌2 OST', '바다 OST']) 
         if sel_sea == '서로의 온기 시즌1 OST': 
             st.markdown("서로의 온기 시즌1 OST - 폭풍 속에서 잡은 손\n")
             st.audio("OST_2.mp3", width="stretch")
