@@ -11,7 +11,10 @@ import movie_module as mo
 st.set_page_config(page_title="숏캐스트 - AI 숏드라마 OTT", page_icon="🎥")
 st.title("🎥 숏캐스트 V2.5\n")
 st.markdown("이곳은 AI가 창조한 새로운 서사를 만나는 AI 숏드라마 전용 OTT입니다.\n")
-sel_upd = st.selectbox("업데이트 정보", ['V2.5'])
+sel_upd = st.selectbox("업데이트 정보", ['보기', 'V2.5'])
+
+if sel_upd == '보기':
+  st.write("\n")
 if sel_upd == 'V2.5':
   st.markdown("- 모든 카테고리에 'OST 듣기' 기능 추가\n")
   st.markdown("- 모든 카테고리에 '업데이트 정보' 추가\n")
