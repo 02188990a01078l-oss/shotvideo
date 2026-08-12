@@ -168,6 +168,9 @@ def category(sel):
             st.markdown("그런 민식 곁에 용기있는 여학생 지윤이 다가와 따뜻한 위로와 조언을 건네는 이야기.\n")
             if st.button("상세보기 취소", width=130):
                 st.rerun()
+                        
+        st.write("\n")
+        st.write("\n")
         sel_sea = st.selectbox("🎶 OST 선택", ['서로의 온기 시즌1 OST', '서로의 온기 시즌2 OST', '바다 OST']) 
         if sel_sea == '서로의 온기 시즌1 OST': 
             st.markdown("서로의 온기 시즌1 OST - 폭풍 속에서 잡은 손\n")
