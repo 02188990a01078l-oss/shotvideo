@@ -172,13 +172,13 @@ def category(sel):
                 sel_sea = st.selectbox("시즌 선택", ['서로의 온기 시즌1 OST', '서로의 온기 시즌2 OST', '바다 OST'])
                 if sel_sea == '서로의 온기 시즌1 OST':
                     st.markdown("서로의 온기 시즌1 OST - 폭풍 속에서 잡은 손\n")
-                    st.andio("OST_2.mp3", width="stretch")
+                    st.Andio("OST_2.mp3", width="stretch")
                 elif sel_sea == '서로의 온기 시즌 2 OST':
                     st.markdown("서로의 온기 시즌 2 OST - 서로의 온기\n")
-                    st.andio("OST_3.mp3", width="stretch")
+                    st.Andio("OST_3.mp3", width="stretch")
                 elif sel_sea == '바다 OST':
                     st.markdown("바다 OST - 바다가 닿을 때까지\n")
-                    st.andio("OST_1.mp3", width="stretch")
+                    st.Andio("OST_1.mp3", width="stretch")
         
         st.write("\n")
         st.write("\n")
