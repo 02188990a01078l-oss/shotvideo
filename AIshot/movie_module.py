@@ -176,10 +176,10 @@ def category(sel):
             st.write("\n")
         elif sel_sea == '서로의 온기 시즌1 OST': 
             st.markdown("서로의 온기 시즌1 OST - 폭풍 속에서 잡은 손\n")
-            st.audio("OST_2.mp3", width="stretch")
+            st.audio("OST_3.mp3", width="stretch")
         elif sel_sea == '서로의 온기 시즌2 OST':
             st.markdown("서로의 온기 시즌2 OST - 서로의 온기\n")
-            st.audio("OST_3.mp3", width="stretch")
+            st.audio("OST_2.mp3", width="stretch")
         elif sel_sea == '바다 OST': 
             st.markdown("바다 OST - 바다가 닿을 때까지\n")
             st.audio("OST_1.mp3", width="stretch")
