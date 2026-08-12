@@ -18,5 +18,7 @@ if sel_upd == '보기':
 elif sel_upd == 'V2.5':
   st.markdown("- 모든 카테고리에 'OST 듣기' 기능 추가\n")
   st.markdown("- 모든 카테고리에 '업데이트 정보' 추가\n")
+  if st.button("닫기", width=130):
+    st.rerun()
 Select = st.selectbox("모든 카테고리", ['모든 카테고리', '취업/직장', '첫사랑', '판타지', '가족', '학교', '슬픈 연애'], width=130)
 mo.category(Select)
