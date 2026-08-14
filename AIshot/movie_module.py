@@ -185,7 +185,7 @@ def category(sel):
             st.audio("OST_1.mp3", width="stretch")
         elif sel_sea == '시간의 조각들 OST':
             st.markdown("시간의 조각들 OST - 푸른 시간의 조각\n")
-            st.video("OST_4.mp3", width="stretch")
+            st.audio("OST_4.mp3", width="stretch")
 
         
         st.write("\n")
