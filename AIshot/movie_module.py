@@ -171,7 +171,7 @@ def category(sel):
                         
         st.write("\n")
         st.write("\n")
-        sel_sea = st.selectbox("🎶 OST 듣기", ['OST를 선택해보세요!', '서로의 온기 시즌1 OST', '서로의 온기 시즌2 OST', '바다 OST'])
+        sel_sea = st.selectbox("🎶 OST 듣기", ['OST를 선택해보세요!', '서로의 온기 시즌1 OST', '서로의 온기 시즌2 OST', '바다 OST', '시간의 조각들 OST'])
         if sel_sea == 'OST를 선택해보세요!':
             st.write("\n")
         elif sel_sea == '서로의 온기 시즌1 OST': 
@@ -183,6 +183,9 @@ def category(sel):
         elif sel_sea == '바다 OST': 
             st.markdown("바다 OST - 바다가 닿을 때까지\n")
             st.audio("OST_1.mp3", width="stretch")
+        elif sel_sea == '시간의 조각들 OST':
+            st.markdown("시간의 조각들 OST - 푸른 시간의 조각")
+            st.video("OST_4.mp3", width="stretch")
 
         
         st.write("\n")
