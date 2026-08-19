@@ -110,7 +110,7 @@ def category(sel):
         st.write("\n")
         st.markdown("👍 비슷한 단막극을 추천해드려요!\n")
         
-        vid6, vid7 = st.columns(2)
+        vid6, vid7, vid8 = st.columns(3)
         with vid6: 
             if st.button("1. 서로의 온기 2: 소희와 민석", width=300): 
                 with st.expander("서로의 온기 2: 소희와 민석", width=500): 
@@ -120,8 +120,6 @@ def category(sel):
                     st.markdown("이 둘의 하루는 참 답답하고, 불쌍하다.\n")
                     st.markdown("그러던 어느날, 계속 사귀지 못한 민석의 용기있는 행동이 나온다.\n")
                     st.video("https://youtu.be/aZCTKxsBdGg?si=8qrcvzPi8GmC1Wz_")
-                    if st.button("닫기", width=130): 
-                        st.rerun()
         with vid7:
             if st.button("2. 서로의 온기 2: 지윤과 민식", width=300): 
                 with st.expander("서로의 온기 2: 지윤과 민식", width=500): 
@@ -130,8 +128,14 @@ def category(sel):
                     st.markdown("2년 동안 학업 시스템이 완벽한 명문 이수고등학교에서 우식 패거리에게 학교폭력을 당한 민식.\n")
                     st.markdown("그런 민식 곁에 용기있는 여학생 지윤이 다가와 따뜻한 위로와 조언을 건네는 이야기.\n")
                     st.video("https://youtu.be/p9J9A_L4Wkc?si=llkGgfybUgItcy8C")
-                    if st.button("닫기", width=130): 
-                        st.rerun()
+        with vid8:
+            if st.button("3. 서로의 온기 2: 서현과 민오", width=300): 
+                with st.expander("서로의 온기 2: 서현과 민오", width=500): 
+                    st.markdown("학교폭력, 위로, 조언, 따뜻한 손길, 사회문제\n")
+                    st.markdown("[📑줄거리 보기]\n")
+                    st.markdown("의대를 많이 보내는 명문 일반고 ‘과수고’. 부모님의 기대에 따라 의대 진학을 꿈꾸던 고등학생 민오는 성적의 벽 앞에서 결국 좌절하고, 자신이 무엇을 원하는지도 잃어버린다.\n")
+                    st.markdown("그런 민오 곁에 운명처럼 나타난 서현. 두 사람의 만남을 통해 민오는 자신의 진짜 꿈을 찾아가기 시작한다.\n")
+                    st.video("https://youtube.com/shorts/1KwPgUSdpqg?feature=share")
                     
     elif sel == "슬픈 연애":
         st.title("서로의 온기: 연서와 규현\n")
@@ -159,13 +163,13 @@ def category(sel):
     
     elif sel == "모든 카테고리":
         st.title("🆕 최신 AI 숏폼\n")
-        st.markdown("서로의 온기 2: 지윤과 민식\n")
-        st.markdown("학교폭력, 위로, 조언, 따뜻한 손길, 사회문제\n")
-        st.video("https://youtu.be/p9J9A_L4Wkc?si=llkGgfybUgItcy8C", width=300)
+        st.markdown("서로의 온기 2: 서현과 민오\n")
+        st.markdown("입시, 명문고, 의대, 슬픔, 좌절, 운명, 따뜻한, 온기, 위로\n")
+        st.video("https://youtube.com/shorts/1KwPgUSdpqg?feature=share", width=300)
         if st.button("상세 보기", icon="📑", icon_position="left", width=300):
-            st.markdown("서로의 온기 2: 지윤과 민식\n")
-            st.markdown("2년 동안 학업 시스템이 완벽한 명문 이수고등학교에서 우식 패거리에게 학교폭력을 당한 민식.\n")
-            st.markdown("그런 민식 곁에 용기있는 여학생 지윤이 다가와 따뜻한 위로와 조언을 건네는 이야기.\n")
+            st.markdown("서로의 온기 2: 서현과 민오\n")
+            st.markdown("의대를 많이 보내는 명문 일반고 ‘과수고’. 부모님의 기대에 따라 의대 진학을 꿈꾸던 고등학생 민오는 성적의 벽 앞에서 결국 좌절하고, 자신이 무엇을 원하는지도 잃어버린다.\n")
+            st.markdown("그런 민오 곁에 운명처럼 나타난 서현. 두 사람의 만남을 통해 민오는 자신의 진짜 꿈을 찾아가기 시작한다.\n")
             if st.button("상세보기 취소", width=130):
                 st.rerun()
                         
