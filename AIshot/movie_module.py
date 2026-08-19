@@ -135,7 +135,7 @@ def category(sel):
                     st.markdown("[📑줄거리 보기]\n")
                     st.markdown("의대를 많이 보내는 명문 일반고 ‘과수고’. 부모님의 기대에 따라 의대 진학을 꿈꾸던 고등학생 민오는 성적의 벽 앞에서 결국 좌절하고, 자신이 무엇을 원하는지도 잃어버린다.\n")
                     st.markdown("그런 민오 곁에 운명처럼 나타난 서현. 두 사람의 만남을 통해 민오는 자신의 진짜 꿈을 찾아가기 시작한다.\n")
-                    st.video("https://youtube.com/shorts/1KwPgUSdpqg?feature=share")
+                    st.video("https://youtu.be/1KwPgUSdpqg?si=b1SP5P1MavjKYNg_")
                     
     elif sel == "슬픈 연애":
         st.title("서로의 온기: 연서와 규현\n")
@@ -165,7 +165,7 @@ def category(sel):
         st.title("🆕 최신 AI 숏폼\n")
         st.markdown("서로의 온기 2: 서현과 민오\n")
         st.markdown("입시, 명문고, 의대, 슬픔, 좌절, 운명, 따뜻한, 온기, 위로\n")
-        st.video("https://youtube.com/shorts/1KwPgUSdpqg?feature=share", width=300)
+        st.video("https://youtu.be/1KwPgUSdpqg?si=b1SP5P1MavjKYNg_", width=300)
         if st.button("상세 보기", icon="📑", icon_position="left", width=300):
             st.markdown("서로의 온기 2: 서현과 민오\n")
             st.markdown("의대를 많이 보내는 명문 일반고 ‘과수고’. 부모님의 기대에 따라 의대 진학을 꿈꾸던 고등학생 민오는 성적의 벽 앞에서 결국 좌절하고, 자신이 무엇을 원하는지도 잃어버린다.\n")
