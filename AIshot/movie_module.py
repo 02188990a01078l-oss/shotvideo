@@ -97,7 +97,7 @@ def category(sel):
                 
     elif sel == "학교":
         st.title("서로의 온기: 소희와 민석\n")
-        st.markdown("친구, 외로움, 고통, 서로의 온기, 따뜻한 손길\n")
+        st.markdown("입시, 명문고, 의대, 슬픔, 좌절, 운명, 따뜻한, 온기, 위로\n")
         st.video("https://youtu.be/4sAqoEU0IVE?si=avMRS38QliDcBBDd", width=300)
         if st.button("상세 보기", icon="📑", icon_position="left", width=300): 
             st.write("서로의 온기: 소희와 민석\n")
